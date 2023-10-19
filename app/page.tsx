@@ -51,7 +51,7 @@ const Home = () => {
     content = (
       <>
       <div>
-        <Current />
+        <Current data={data}/>
         <WeekForecast />
       </div>
       <div>
