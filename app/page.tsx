@@ -5,26 +5,26 @@ import Input from "./component/Input";
 
 const Home = () => {
   const [data, setData] = useState({});
-  const [location, setLocation] = useState("")
-  const [error , setError] = useState("")
-  const url = 'http://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=${location}&days=7&aqi=yes&alerts=yes'
+  const [location, setLocation] = useState("");
+  const [error , setError] = useState("");
+  const url = `http://api.weatherapi.com/v1/forecast.json?key=5a6bdc0a96f7439ead1102542231610&q=${location}&days=7&aqi=yes&alerts=yes`;
 
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if(e.key === "Enter")
     {
-      e.preventDefault()
+      e.preventDefault();
       try {
-        const response = await fetch(url)
+        const response = await fetch(url);
         if(!response.ok){
-          throw new Error()
+          throw new Error();
         }
-        const data = await response.json()
-        setData(data)
-        setLocation("")
-        setError("")
+        const data = await response.json();
+        setData(data);
+        setLocation("");
+        setError("");
       } catch (error){
-        setError("city not found")
-        setData({})
+        setError("city not found");
+        setData({});
       }
     }
   };
