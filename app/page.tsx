@@ -50,19 +50,19 @@ const Home = () => {
   } else {
     content = (
       <>
-      <div>
+      <div className="flex md:flex-row flex-col p-12 items-center justify-between">
         <Current data={data}/>
         <WeekForecast data={data} />
       </div>
       <div>
-        <WeatherDetails />
+        <WeatherDetails data={data} />
       </div>
       </>
     );
   }
 
   return (
-    <div className="bg-color bg-gradient-to-r from-blue-900 to-blue-400 h-screen">
+    <div className="bg-color bg-gradient-to-r from-blue-900 to-blue-400 h-fit">
       <div className="bg-white/25 w-full flex flex-col h-fit">
 
         {/*INPUT AND LOGO*/}
