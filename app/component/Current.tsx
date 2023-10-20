@@ -12,14 +12,15 @@ const Current = ({data}) => {
             </div>
             {weatherIcon && (
                 <div>
-                    <img src={weatherIcon} alt={data.current.condition.text} />
+                    <img className="w-[50px] object-cover" src={weatherIcon} alt={data.current.condition.text} />
                 </div>
             )}
         </div>
         <p className="text-5xl text-white">
             {data.current.temp_f.toFixed()}
-            <span></span>
+            <span>°</span>
         </p>
+        <span className="text-white">{data.current.condition.text}</span>
     </div>
   );
 };
