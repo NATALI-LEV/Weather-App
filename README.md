@@ -20,17 +20,17 @@ This project consists of several components that work together to create a funct
 
 1. Clone this repository to your local machine:
     ```shell
-git clone https://github.com/NATALI-LEV/Weather-App.git
+    git clone https://github.com/NATALI-LEV/Weather-App.git
 
 2. Install the required dependencies:
     ```shell
-npm install
+    npm install
 
-3. Obtain an API Key: To use this application, you need to obtain an API key from the WeatherAPI website. Once you have your API key, replace the placeholder in the page.tsx file with your own key.
+3. Obtain an API Key: To use this application, you need to obtain an API key from the WeatherAPI website. Once you have your API key, replace the placeholder in the page.tsx file  with your own key.
 
 4. Run the application
     ```bash
-npm run dev
+    npm run dev
 
 5. Access the app in your web browser at http://localhost:3000.
 
