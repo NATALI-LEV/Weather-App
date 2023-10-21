@@ -36,15 +36,16 @@ const Home = () => {
   if(Object.keys(data).length === 0 && error ==='')
   {
     content= (
-      <div>
-        <h2>welcome to the weather app</h2>
+      <div className="text-white text-center h-screen mt-[5rm]">
+        <h2 className="text-3xl font-semibold mb-4">Welcome to the weather app</h2>
+        <p className="text-xl">Pick a city and get the full weather forecast</p>
       </div>
     );
   } else if (error != ""){
     content = (
-      <div>
-        <p>city not found !</p>
-        <p>enter a valid city please</p>
+      <div className="text-white text-center h-screen mt-[5rm]">
+        <p className="text-3xl font-semibold mb-4">city not found !</p>
+        <p className="text-xl">enter a valid city please</p>
       </div>
     );
   } else {
@@ -62,7 +63,7 @@ const Home = () => {
   }
 
   return (
-    <div className="bg-color bg-gradient-to-r from-blue-900 to-blue-400 h-fit">
+    <div className="bg-color bg-gradient-to-r from-pink-900 to-pink-100 h-fit">
       <div className="bg-white/25 w-full flex flex-col h-fit">
 
         {/*INPUT AND LOGO*/}

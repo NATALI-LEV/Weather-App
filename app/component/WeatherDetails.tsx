@@ -6,10 +6,27 @@ import { CiTempHigh } from "react-icons/ci";
 import { FaEye } from "react-icons/fa";
 
 interface WeatherDetailsProps {
-  
+  data: {
+    current: {
+      wind_mph:number;
+      humidity: number;
+      wind_dir: string;
+      pressure_mb :number;
+      feelslike_c: number;
+      vis_km:number;
+    };
+    forecast: {
+      forecastday: {
+        astro: {
+          sunrise: string;
+          sunset :string;
+        };
+      }[];
+    };
+  };
 }
 
-const WeatherDetails = ({data}) => {
+const WeatherDetails = ({data} : WeatherDetailsProps) => {
   return (
     <>
       <div className="p-12">
