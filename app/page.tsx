@@ -67,7 +67,7 @@ const Home = () => {
     <div className="bg-color bg-gradient-to-r from-blue-900 to-green-900 h-fit">
       <div className="bg-white/25 w-full flex flex-col h-fit">
 
-        {/*INPUT AND LOGO*/}
+        {/*INPUT AND  LOGO*/}
 
         <div className="flex flex-col md:flex-row justify-between items-center p-12">
           <Input handleSearch={handleSearch} setLocation={setLocation} />
