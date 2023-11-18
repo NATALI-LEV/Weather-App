@@ -31,3 +31,5 @@ This project consists of several components that work together to create a funct
     npm run dev
 
 7. Access the app in your web browser at http://localhost:3000.
+
+![levWeather Screenshot](screenshot/weather.png)
